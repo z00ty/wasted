@@ -16,19 +16,16 @@ dns:
   use-hosts: true
   default-nameserver:
     - 223.5.5.5
+    - 119.29.29.29
   proxy-server-nameserver:
-    - https://hw.bb28.dev:47126/dns-query
-    - tls://hw.bb28.dev:853
-    - https://tx.bb28.dev:47126/dns-query
-    - tls://tx.bb28.dev:853
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver:
-    - https://hw.bb28.dev:47126/dns-query
-    - tls://hw.bb28.dev:853
-    - https://tx.bb28.dev:47126/dns-query
-    - tls://tx.bb28.dev:853
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
-    - tls://dns.google
-    - tls://one.one.one.one
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN

@@ -1,0 +1,71 @@
+[[custom_groups]]
+name = "🔰 节点选择"
+type = "select"
+rule = ["[]♻️ 自动选择",".*"]
+
+[[custom_groups]]
+name = "📺 哔哩哔哩"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择","[]🎯 直接连接","(台|hk|港|tw)",".*"]
+
+[[custom_groups]]
+name = "🎮 Steam"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择",".*"]
+
+[[custom_groups]]
+name = "🇨🇳 中国媒体"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择","[]🎯 直接连接",".*"]
+
+[[custom_groups]]
+name = "Ⓜ️ 微软"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择","[]🎯 直接连接",".*"]
+
+[[custom_groups]]
+name = "📲 Telegram"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择",".*"]
+
+[[custom_groups]]
+name = "🍎 苹果"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择","[]🎯 直接连接",".*"]
+
+[[custom_groups]]
+name = "🤖 AI"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择",".*"]
+
+[[custom_groups]]
+name = "🌍 全球媒体"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择",".*"]
+
+[[custom_groups]]
+name = "📺 巴哈姆特"
+type = "select"
+rule = ["[]🎯 直接连接","(台|tw)",".*"]
+
+[[custom_groups]]
+name = "♻️ 自动选择"
+type = "url-test"
+rule = [".*"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🎯 直接连接"
+type = "select"
+rule = ["[]DIRECT"]
+
+[[custom_groups]]
+name = "🛑 阻止连接"
+type = "select"
+rule = ["[]REJECT", "[]DIRECT"]
+
+[[custom_groups]]
+name = "🐟 漏网之鱼"
+type = "select"
+rule = ["[]🔰 节点选择","[]♻️ 自动选择",".*"]

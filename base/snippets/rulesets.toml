@@ -1,0 +1,55 @@
+[[rulesets]]
+group = "📺 哔哩哔哩"
+ruleset = "rules/BiliBili.list"
+
+[[rulesets]]
+group = "Ⓜ️ 微软"
+ruleset = "rules/Microsoft.list"
+
+[[rulesets]]
+group = "🍎 苹果"
+ruleset = "rules/Apple.list"
+
+[[rulesets]]
+group = "🤖 AI"
+ruleset = "rules/AI.list"
+
+[[rulesets]]
+group = "🌍 全球媒体"
+ruleset = "rules/GlobalMedia.list"
+
+[[rulesets]]
+group = "📲 Telegram"
+ruleset = "rules/Telegram.list"
+
+[[rulesets]]
+group = "📺 巴哈姆特"
+ruleset = "rules/Bahamut.list"
+
+[[rulesets]]
+group = "🎮 Steam"
+ruleset = "rules/Steam.list"
+
+[[rulesets]]
+group = "🇨🇳 中国媒体"
+ruleset = "rules/ChinaMedia.list"
+
+[[rulesets]]
+group = "🎯 直接连接"
+ruleset = "rules/DirectConnection.list"
+
+[[rulesets]]
+group = "🎯 直接连接"
+ruleset = "[]GEOIP,CN"
+
+[[rulesets]]
+group = "🛑 阻止连接"
+ruleset = "rules/Block.list"
+
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = "rules/NodePick.list"
+
+[[rulesets]]
+group = "🐟 漏网之鱼"
+ruleset = "[]FINAL"

@@ -36,7 +36,7 @@ cd ..
 
 git clone https://github.com/ToruNiina/toml11 --branch v3.7.1 --depth=1 && \
 cd toml11
-cmake -DCMAKE_CXX_STANDARD=11 .
+cmake .
 make install -j4
 cd ..
 

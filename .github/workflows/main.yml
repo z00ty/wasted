@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: install
-        run: apt install curl wget bash git nodejs npm gcc g++ build-essential linux-headers-$(uname -r) cmake make autoconf automake libtool libmbedtls-dev libghc-zlib-dev rapidjson-dev libevent-dev libpcre2-dev pkg-config -y
+        run: sudo apt install curl wget bash git nodejs npm gcc g++ build-essential linux-headers-$(uname -r) cmake make autoconf automake libtool libmbedtls-dev libghc-zlib-dev rapidjson-dev libevent-dev libpcre2-dev pkg-config -y
       - name: Build
         run: cd $GITHUB_WORKSPACE && chmod +x scripts/build.alpine.release.sh && bash scripts/build.Linux.release.sh
       - name: Package
@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: install
-        run: apt install curl wget bash git nodejs npm gcc g++ build-essential linux-headers-$(uname -r) cmake make autoconf automake libtool libmbedtls-dev libghc-zlib-dev rapidjson-dev libevent-dev libpcre2-dev pkg-config -y
+        run: sudo apt install curl wget bash git nodejs npm gcc g++ build-essential linux-headers-$(uname -r) cmake make autoconf automake libtool libmbedtls-dev libghc-zlib-dev rapidjson-dev libevent-dev libpcre2-dev pkg-config -y
       - name: Build
         run: cd $GITHUB_WORKSPACE && chmod +x scripts/build.alpine.release.sh && bash scripts/build.Linux.release.sh
       - name: Package

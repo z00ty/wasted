@@ -495,6 +495,7 @@ T unwrap_free(JSContext * ctx, JSValue val)
 template <class Tuple, std::size_t... I>
 Tuple unwrap_args_impl(JSContext * ctx, JSValueConst * argv, std::index_sequence<I...>)
 {
+    (void)ctx;
     return Tuple{js_traits<std::decay_t<std::tuple_element_t<I, Tuple>>>::unwrap(ctx, argv[I])...};
 }
 

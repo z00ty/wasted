@@ -234,6 +234,9 @@ void proxyToClash(std::vector<Proxy> &nodes, YAML::Node &yamlnode, const ProxyGr
             if (!x.ShortId.empty())
                 singleproxy["reality-opts"]["short-id"] = x.ShortId;
         }
+        singleproxy["client-fingerprint"] = "chrome";
+        if (!x.Fingerprint.empty())
+            singleproxy["client-fingerprint"] = x.Fingerprint;
         switch (x.Type) {
             case ProxyType::Shadowsocks:
                 //latest clash core removed support for chacha20 encryption
@@ -242,6 +245,8 @@ void proxyToClash(std::vector<Proxy> &nodes, YAML::Node &yamlnode, const ProxyGr
                 singleproxy["type"] = "ss";
                 singleproxy["cipher"] = x.EncryptMethod;
                 singleproxy["password"] = x.Password;
+                if (!tfo.is_undef())
+                    singleproxy["tfo"] = tfo.get();
                 if (std::all_of(x.Password.begin(), x.Password.end(), ::isdigit) && !x.Password.empty())
                     singleproxy["password"].SetTag("str");
                 switch (hash_(x.Plugin)) {
